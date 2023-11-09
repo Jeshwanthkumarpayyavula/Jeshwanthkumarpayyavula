@@ -1,60 +1,73 @@
-# Developing a Simple Webserver
-Name : PYNAM VINODH
-ID : 23004069
-email =pynamvinodh6@gmail.com
+# Developing a Simple HTML website
+Name : Payyavula jeshwanth kumar
+ID : 23002519
+email =jeshwanthkumarpayyavula@gmail.com
 
 # AIM:
 
-Develop a webserver to display about top five web application development frameworks.
+Develop a simple Html website
 
 # DESIGN STEPS:
 
 ## Step 1:
 
-HTML content creation is done
+Heading with our college name
 
 ## Step 2:
 
-Design of webserver workflow
+Title as SEC
 
 ## Step 3:
 
-Implementation using Python code
-
+Background color as Green
 ## Step 4:
 
-Serving the HTML pages.
+Create a  list of departments
 
 ## Step 5:
 
-Testing the webserver
+Create a link that will go to saveetha.ac.in
+## Step 5:
+Text color is blue
+
 # PROGRAM:
-```from http.server import HTTPServer, BaseHTTPRequestHandler
-
-content = """
+```
 <html>
-<head>
-<body>
-<h1>Welcome</h1>
-</body>
-</head>
+    <head>
+        <b>
+            Saveetha enginrering college
+        </b>
+        <link rel="stylesheet" href="main.css" type="text/css">
+        <title>
+           SEC
+           
+        </title>
+        
+    </head>
+    
+    <body>
+        
+        <ul>
+            <li>CSE</li>
+            <li>AIML</li>
+            <li>AIDS</li>
+            <li>CYBER SECURITY</li>
+            <li>IOT</li>
+            <li>ECE</li>
+            <li>i study in this college  <abbr title="Saveetha Engineering College">
+                <a href="https://saveetha.ac.in/">SEC</a>
+            </abbr></li>
+            
+        </ul>
+         
+    </body>
 </html>
-"""
 
-class HelloHandler(BaseHTTPRequestHandler):
-    def do_GET(self):
-        print("Get request recieved")
-        self.send_response(200)
-        self.send_header('Content-type','text/html;charset=utf-8')
-        self.end_headers()
-        self.wfile.write(content.encode())
 
-print("This is my webserver")
-server_address = ('',80)
-httpd = HTTPServer(server_address,HelloHandler)
 ```
 # OUTPUT:
-![image](https://github.com/PYNAMVINODH/html/assets/145742678/6bcda814-d60d-4606-a805-e472a0be42ac)
+![image](https://github.com/Jeshwanthkumarpayyavula/Jeshwanthkumarpayyavula/assets/145742402/81f6b387-119b-4742-8552-75352941994f)
+
 
 # RESULT:
 
